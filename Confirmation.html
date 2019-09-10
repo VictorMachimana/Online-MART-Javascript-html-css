@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Store|Confirm</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="shoppingCart.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Confirm.js" defer></script>
+</head>
+
+<body onload="orderNumber()">
+	<header class="main-header">
+		<nav class="main-nav nav">
+			<ul>
+				<li><a href="Landing.html">HOME</a></li>
+				<li><a href="Delivery.html">SHIPPING</a></li>
+				<li><a href="About.html">ABOUT</a></li>
+			</ul>
+		</nav>
+		<h1 class="band-name band-name-large">ONLINE MART</h1>
+		<button onclick="window.location.href = 'javascript:history.back()';" class="btn back btn-header">BACK</button>
+	</header>
+
+	<section class="content-section container">
+		<center>
+		<h2 class="section-header">confirmation! Notification</h2>
+		<br>
+		<h3>Congrats - Order Complete</h3>
+		<div><span>Your Order Number is:</span>
+		<output id="gen-output"></output> 
+		</div>
+		<br>
+		<p>Thank You For Shopping With Us &#128578;</p>
+		<br>
+		<button class="btn-primary btn2" onclick="window.location.href = 'Landing.html';" onclick="removeallItems()">Finish</button>
+		</center>
+	</section>
+	<br>
+
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+		<h3 class="band-name">ONLINE MART</h3>
+		<ul class="nav footer-nav">
+			<li>
+				<a href="https://youtube.com" target="_blank">
+					<img src="images/youtube.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://spotify.com" target="_blank">
+					<img src="images/spotify.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com" target="_blank">
+					<img src="images/facebook.png">
+				</a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Store|Discount</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="shoppingCart.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Discount.js" defer></script>
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-nav nav">
+			<ul>
+				<li><a href="Landing.html">HOME</a></li>
+				<li><a href="Delivery.html">SHIPPING</a></li>
+				<li><a href="About.html">ABOUT</a></li>
+			</ul>
+		</nav>
+		<h1 class="band-name band-name-large">ONLINE MART</h1>
+		<button onclick="window.location.href = 'Cart.html';" class="btn back btn-header">BACK</button>
+	</header>
+
+	<section class="content-section container">
+		<h2 class="section-header">Discount Section</h2>
+		<div>
+			<p>Get 5% off your purchase</p>
+			<p>Please enter discount code below or click next:</p>
+			<br>
+			<label>Discount Code:</label>
+			<input type="text" id="discount">
+			<br>
+			<br>
+			<button onclick="discountCode()" id="enter" class="btn-primary btn2">Enter</button>
+			<br>
+			<br>
+			<div class="cart-total">
+				<strong class="discount-total-title">Total</strong>
+				<span id="discount-total-price">R0</span>
+			</div>
+		</div>
+		<br>
+		<button onclick="window.location.href = 'Delivery.html';" class="btn-primary btn-next">NEXT</button>	
+	</section>
+	<br>
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+		<h3 class="band-name">ONLINE MART</h3>
+		<ul class="nav footer-nav">
+			<li>
+				<a href="https://youtube.com" target="_blank">
+					<img src="images/youtube.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://spotify.com" target="_blank">
+					<img src="images/spotify.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com" target="_blank">
+					<img src="images/facebook.png">
+				</a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Store|Delivery</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="shoppingCart.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Delivery.js" defer></script>
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-nav nav">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">STORE</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</nav>
+		<h1 class="band-name band-name-large">ONLINE MART</h1>
+		<button onclick="window.location.href = 'Discount.html';" class="btn back btn-header">BACK</button>
+	</header>
+
+	<section class="content-section container">
+		<h2 class="section-header">Delivery Section</h2>
+		<br>
+		<br>
+		<h3>Estimated cost</h3>
+		<span id="delivery-price">R0</span>
+		<br>
+		<p>please select delivery method</p>
+		<br>
+		<select id="list" onchange="getSelectValue();">
+			<option value="0">Pick-Up Free</option>
+			<option value="57">PostNet R57</option>
+			<option value="65">DHL R65</option>
+			<option value="154">BEX Express R154</option>
+		</select>
+		<br>
+		<br>
+		<br>
+		<div>VAT: 15.00%</div>
+		<br>
+		<div class="delivery-total">
+			<strong class="delivery-total-title">Total Cost:</strong>
+			<span id="delivery-total-price">R0</span>
+		</div>
+		<br>
+		<br>
+		<button class="btn btn-primary btn-purchase" type="button" onclick="window.location.href = 'Confirmation.html';" class="btn btn-header">PURCHASE</button>
+	</section>
+	<br>
+
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+		<h3 class="band-name">ONLINE MART</h3>
+		<ul class="nav footer-nav">
+			<li>
+				<a href="https://youtube.com" target="_blank">
+					<img src="images/youtube.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://spotify.com" target="_blank">
+					<img src="images/spotify.png">
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com" target="_blank">
+					<img src="images/facebook.png">
+				</a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+</body>
+
+</html>
